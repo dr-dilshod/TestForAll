@@ -1,0 +1,56 @@
+TGraph 2;
+
+Schema pgktltt.ClassDiagramMM;
+
+GraphClass KClassDiagram {name: String};
+
+Comment KClassDiagram "Alle Metamodell-Elemente erben von ModelElement (KClass, Connection usw.)";
+EnumDomain KVisibility (Package, Public, Protected, Private);
+abstract VertexClass KClassifier: KDomain, KNode;
+abstract VertexClass KRelationship: ModelElement;
+VertexClass BoundingBox: Position {height: Integer, width: Integer};
+abstract VertexClass Position: ModelElement {x: Integer, y: Integer};
+abstract VertexClass ModelElement {gDiff_UUID: String, lastChangingUser: String};
+VertexClass KGeneralization: KRelationship;
+VertexClass GraphicalEdge: ModelElement;
+VertexClass BendPoint: Position {index: Integer};
+Comment ContainsBendPoint "<span style=\"font-size:9pt;\">Muss geordnet sein</span>";
+EdgeClass ContainsBendPoint from GraphicalEdge (1,1) to BendPoint (0,*) role bendPoint aggregation composite;
+VertexClass KAttribute: ModelElement {name: String, visibility: KVisibility, static: Boolean};
+VertexClass KMethod: ModelElement {name: String, visibility: KVisibility, static: Boolean, abstract: Boolean};
+EdgeClass ContainsAttribute from KClassifier (1,1) to KAttribute (0,*) role attribute aggregation composite;
+EdgeClass ContainsMethod from KClassifier (1,1) to KMethod (0,*) role method aggregation composite;
+abstract VertexClass KDomain: ModelElement {name: String};
+VertexClass KPrimitiveType: KDomain;
+EdgeClass LinksToAttributeType from KAttribute (0,*) to KDomain (1,1) role attributeType;
+EdgeClass LinksToReturnType from KMethod (0,*) to KDomain (1,1) role returnType;
+VertexClass KParameter: ModelElement {name: String, index: Integer};
+EdgeClass LinksToParameterType from KParameter (0,*) to KDomain (1,1) role parameterType;
+Comment ContainsParameter "Geordnet";
+EdgeClass ContainsParameter from KMethod (1,1) to KParameter (0,*) role parameter aggregation composite;
+EdgeClass LinksToKNode from BoundingBox (0,*) role boundingbox to KNode (1,1) role kNode;
+VertexClass KAggregation: KAssociation;
+VertexClass KComposition: KAggregation;
+VertexClass KEnum: KDomain, KNode;
+VertexClass KLiteral {name: String};
+EdgeClass ContainsLiteral from KEnum (1,1) to KLiteral (0,*) role literal aggregation composite;
+VertexClass KAssociation: KRelationship {text: String};
+EdgeClass LinksToSource from KGeneralization (0,*) to KClassifier (1,1) role source;
+EdgeClass LinksToTarget from KGeneralization (0,*) to KClassifier (1,1) role target;
+Comment KAssociationEndPoint "Falls multiMin oder multiMax &lt; 0 sind gilt *";
+VertexClass KAssociationEndPoint: ModelElement {multMin: Integer, multMax: Integer, name: String, visibility: KVisibility, navigable: Boolean};
+EdgeClass ContainsSource from KAssociation (1,1) to KAssociationEndPoint (1,1) role source aggregation composite;
+EdgeClass ContainsTarget from KAssociation (1,1) to KAssociationEndPoint (1,1) role target aggregation composite;
+EdgeClass LinksToEndpointClass from KAssociationEndPoint (0,*) to KClassifier (1,1) role endpointClass;
+abstract VertexClass KNode;
+EdgeClass LinksToEdgeSource from GraphicalEdge (0,*) role outgoingEdge to BoundingBox (1,1) role edgeSource;
+EdgeClass LinksToEdgeTarget from GraphicalEdge (0,*) role incommingEdge to BoundingBox (1,1) role edgeTarget;
+EdgeClass LinksToKRelationship from GraphicalEdge (0,*) role graphicalEdge to KRelationship (1,1) role kRelationship;
+EdgeClass ContainsLabelPosition from GraphicalEdge (1,1) to LabelPosition (0,*) role labelPosition aggregation composite;
+VertexClass KClass: KClassifier {abstract: Boolean};
+VertexClass KInterface: KClassifier;
+VertexClass Diagramm: ModelElement {name: String};
+EdgeClass ContainsBox from Diagramm (1,1) role diagramm to BoundingBox (0,*) role box aggregation composite;
+EdgeClass ContainsGraphicalEdge from Diagramm (1,1) role diagramm to GraphicalEdge (0,*) role graphicalEdge aggregation composite;
+VertexClass LabelPosition: Position {element: String};
+

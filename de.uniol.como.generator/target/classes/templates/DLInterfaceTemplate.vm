@@ -1,0 +1,16 @@
+package de.uniol.como.generator.DifferenceLanguage;
+
+public interface $interface_name {
+    #set( $operation="create"+$model_element+"(String gDiff_UUID")
+	public String $operation
+    	#foreach( $attr in $attrList )
+        	, String $attr
+            #end
+        );
+    #foreach( $attr in $attrList )
+    #set( $attributeChange="change"+$attr+"(String gDiff_UUID, String new"+$attr+")")
+	public String $attributeChange;
+    #end
+    #set( $elementDelete="delete"+$model_element+"(String gDiff_UUID)")
+	public String $elementDelete;
+}

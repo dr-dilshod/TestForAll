@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.2" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.2 http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_lKcphHD8EeSWqJIZE8aMGA" name="pgktltt.ClassDiagramMM">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lKcphXD8EeSWqJIZE8aMGA">
+    <body>&lt;p>Alle Metamodell-Elemente erben von ModelElement (KClass, Connection usw.)&lt;/p></body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lKcphnD8EeSWqJIZE8aMGA" annotatedElement="_lKdQV3D8EeSWqJIZE8aMGA">
+    <body>&lt;p>Falls multiMin oder multiMax &amp;lt; 0 sind gilt *&lt;/p></body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lKcph3D8EeSWqJIZE8aMGA" annotatedElement="_lKcpznD8EeSWqJIZE8aMGA">
+    <body>&lt;p>&lt;span style=&quot;font-size:9pt;&quot;>Muss geordnet sein&lt;/span>&lt;/p></body>
+  </ownedComment>
+  <ownedComment xmi:type="uml:Comment" xmi:id="_lKcpiHD8EeSWqJIZE8aMGA" annotatedElement="_lKdQMXD8EeSWqJIZE8aMGA">
+    <body>&lt;p>Geordnet&lt;/p></body>
+  </ownedComment>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lKcpiXD8EeSWqJIZE8aMGA">
+    <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.2/uml.xml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpinD8EeSWqJIZE8aMGA" name="KClassifier" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpi3D8EeSWqJIZE8aMGA" general="_lKcp93D8EeSWqJIZE8aMGA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpjHD8EeSWqJIZE8aMGA" general="_lKdQbXD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpjXD8EeSWqJIZE8aMGA" name="attribute" visibility="private" type="_lKcp0nD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKcp5nD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpjnD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpj3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpkHD8EeSWqJIZE8aMGA" name="method" visibility="private" type="_lKcp2nD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKcp6nD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpkXD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpknD8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpk3D8EeSWqJIZE8aMGA" name="KRelationship" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcplHD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcplXD8EeSWqJIZE8aMGA" name="graphicalEdge" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" association="_lKdQc3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcplnD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpl3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpmHD8EeSWqJIZE8aMGA" name="BoundingBox">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpmXD8EeSWqJIZE8aMGA" general="_lKcpqHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpmnD8EeSWqJIZE8aMGA" name="height" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpm3D8EeSWqJIZE8aMGA" name="width" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpnHD8EeSWqJIZE8aMGA" name="kNode" visibility="private" type="_lKdQbXD8EeSWqJIZE8aMGA" association="_lKdQNXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpnXD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpnnD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpn3D8EeSWqJIZE8aMGA" name="diagramm" visibility="private" type="_lKdQfXD8EeSWqJIZE8aMGA" association="_lKdQhnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpoHD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpoXD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcponD8EeSWqJIZE8aMGA" name="incommingEdge" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" association="_lKdQcnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpo3D8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcppHD8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcppXD8EeSWqJIZE8aMGA" name="outgoingEdge" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" association="_lKdQcXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcppnD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpp3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpqHD8EeSWqJIZE8aMGA" name="Position" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpqXD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpqnD8EeSWqJIZE8aMGA" name="x" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpq3D8EeSWqJIZE8aMGA" name="y" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcprHD8EeSWqJIZE8aMGA" name="ModelElement" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcprXD8EeSWqJIZE8aMGA" name="gDiff_UUID" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcprnD8EeSWqJIZE8aMGA" name="lastChangingUser" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpr3D8EeSWqJIZE8aMGA" name="KGeneralization">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpsHD8EeSWqJIZE8aMGA" general="_lKcpk3D8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpsXD8EeSWqJIZE8aMGA" name="source" visibility="private" type="_lKcpinD8EeSWqJIZE8aMGA" association="_lKdQT3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpsnD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcps3D8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcptHD8EeSWqJIZE8aMGA" name="target" visibility="private" type="_lKcpinD8EeSWqJIZE8aMGA" association="_lKdQU3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcptXD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcptnD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpt3D8EeSWqJIZE8aMGA" name="GraphicalEdge">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpuHD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpuXD8EeSWqJIZE8aMGA" name="bendPoint" visibility="private" type="_lKcpy3D8EeSWqJIZE8aMGA" aggregation="composite" association="_lKcpznD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpunD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpu3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpvHD8EeSWqJIZE8aMGA" name="edgeSource" visibility="private" type="_lKcpmHD8EeSWqJIZE8aMGA" association="_lKdQcXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpvXD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpvnD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpv3D8EeSWqJIZE8aMGA" name="edgeTarget" visibility="private" type="_lKcpmHD8EeSWqJIZE8aMGA" association="_lKdQcnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpwHD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpwXD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpwnD8EeSWqJIZE8aMGA" name="kRelationship" visibility="private" type="_lKcpk3D8EeSWqJIZE8aMGA" association="_lKdQc3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpw3D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpxHD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpxXD8EeSWqJIZE8aMGA" name="labelPosition" visibility="private" type="_lKdQiHD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQdHD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpxnD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpx3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpyHD8EeSWqJIZE8aMGA" name="diagramm" visibility="private" type="_lKdQfXD8EeSWqJIZE8aMGA" association="_lKdQh3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcpyXD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcpynD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcpy3D8EeSWqJIZE8aMGA" name="BendPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcpzHD8EeSWqJIZE8aMGA" general="_lKcpqHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcpzXD8EeSWqJIZE8aMGA" name="index" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKcpznD8EeSWqJIZE8aMGA" memberEnd="_lKcpuXD8EeSWqJIZE8aMGA _lKcpz3D8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKcpz3D8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" association="_lKcpznD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp0HD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp0XD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcp0nD8EeSWqJIZE8aMGA" name="KAttribute">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcp03D8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp1HD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp1XD8EeSWqJIZE8aMGA" name="visibility" visibility="private" type="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp1nD8EeSWqJIZE8aMGA" name="attributeType" visibility="private" type="_lKcp93D8EeSWqJIZE8aMGA" association="_lKcp_HD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp13D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp2HD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp2XD8EeSWqJIZE8aMGA" name="static" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcp2nD8EeSWqJIZE8aMGA" name="KMethod">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcp23D8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp3HD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp3XD8EeSWqJIZE8aMGA" name="visibility" visibility="private" type="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp3nD8EeSWqJIZE8aMGA" name="returnType" visibility="private" type="_lKcp93D8EeSWqJIZE8aMGA" association="_lKdQInD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp33D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp4HD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp4XD8EeSWqJIZE8aMGA" name="parameter" visibility="private" type="_lKdQJnD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQMXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp4nD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp43D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp5HD8EeSWqJIZE8aMGA" name="static" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp5XD8EeSWqJIZE8aMGA" name="abstract" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKcp5nD8EeSWqJIZE8aMGA" memberEnd="_lKcpjXD8EeSWqJIZE8aMGA _lKcp53D8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKcp53D8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpinD8EeSWqJIZE8aMGA" association="_lKcp5nD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp6HD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp6XD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKcp6nD8EeSWqJIZE8aMGA" memberEnd="_lKcpkHD8EeSWqJIZE8aMGA _lKcp63D8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKcp63D8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpinD8EeSWqJIZE8aMGA" association="_lKcp6nD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKcp7HD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKcp7XD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_lKcp7nD8EeSWqJIZE8aMGA" name="KVisibility">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lKcp73D8EeSWqJIZE8aMGA" name="Package" classifier="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lKcp8HD8EeSWqJIZE8aMGA" name="Public" classifier="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lKcp8XD8EeSWqJIZE8aMGA" name="Protected" classifier="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lKcp8nD8EeSWqJIZE8aMGA" name="Private" classifier="_lKcp7nD8EeSWqJIZE8aMGA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcp83D8EeSWqJIZE8aMGA" name="KClassDiagram">
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lKcp9HD8EeSWqJIZE8aMGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lKcp9XD8EeSWqJIZE8aMGA" key="graphclass"/>
+      </eAnnotations>
+    </xmi:Extension>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp9nD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcp93D8EeSWqJIZE8aMGA" name="KDomain" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcp-HD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKcp-XD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKcp-nD8EeSWqJIZE8aMGA" name="KPrimitiveType">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKcp-3D8EeSWqJIZE8aMGA" general="_lKcp93D8EeSWqJIZE8aMGA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKcp_HD8EeSWqJIZE8aMGA" memberEnd="_lKcp1nD8EeSWqJIZE8aMGA _lKcp_XD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKcp_XD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcp0nD8EeSWqJIZE8aMGA" association="_lKcp_HD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQIHD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQIXD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQInD8EeSWqJIZE8aMGA" memberEnd="_lKcp3nD8EeSWqJIZE8aMGA _lKdQI3D8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQI3D8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcp2nD8EeSWqJIZE8aMGA" association="_lKdQInD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQJHD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQJXD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQJnD8EeSWqJIZE8aMGA" name="KParameter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQJ3D8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQKHD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQKXD8EeSWqJIZE8aMGA" name="parameterType" visibility="private" type="_lKcp93D8EeSWqJIZE8aMGA" association="_lKdQLXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQKnD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQK3D8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQLHD8EeSWqJIZE8aMGA" name="index" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQLXD8EeSWqJIZE8aMGA" memberEnd="_lKdQKXD8EeSWqJIZE8aMGA _lKdQLnD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQLnD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKdQJnD8EeSWqJIZE8aMGA" association="_lKdQLXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQL3D8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQMHD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQMXD8EeSWqJIZE8aMGA" memberEnd="_lKcp4XD8EeSWqJIZE8aMGA _lKdQMnD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQMnD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcp2nD8EeSWqJIZE8aMGA" association="_lKdQMXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQM3D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQNHD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQNXD8EeSWqJIZE8aMGA" memberEnd="_lKcpnHD8EeSWqJIZE8aMGA _lKdQbnD8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQNnD8EeSWqJIZE8aMGA" name="KAggregation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQN3D8EeSWqJIZE8aMGA" general="_lKdQRnD8EeSWqJIZE8aMGA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQOHD8EeSWqJIZE8aMGA" name="KComposition">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQOXD8EeSWqJIZE8aMGA" general="_lKdQNnD8EeSWqJIZE8aMGA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQOnD8EeSWqJIZE8aMGA" name="KEnum">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQO3D8EeSWqJIZE8aMGA" general="_lKcp93D8EeSWqJIZE8aMGA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQPHD8EeSWqJIZE8aMGA" general="_lKdQbXD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQPXD8EeSWqJIZE8aMGA" name="literal" visibility="private" type="_lKdQQHD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQQnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQPnD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQP3D8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQQHD8EeSWqJIZE8aMGA" name="KLiteral">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQQXD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQQnD8EeSWqJIZE8aMGA" memberEnd="_lKdQPXD8EeSWqJIZE8aMGA _lKdQQ3D8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQQ3D8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKdQOnD8EeSWqJIZE8aMGA" association="_lKdQQnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQRHD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQRXD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQRnD8EeSWqJIZE8aMGA" name="KAssociation">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQR3D8EeSWqJIZE8aMGA" general="_lKcpk3D8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQSHD8EeSWqJIZE8aMGA" name="text" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQSXD8EeSWqJIZE8aMGA" name="source" visibility="private" type="_lKdQV3D8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQYXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQSnD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQS3D8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQTHD8EeSWqJIZE8aMGA" name="target" visibility="private" type="_lKdQV3D8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQZXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQTXD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQTnD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQT3D8EeSWqJIZE8aMGA" memberEnd="_lKcpsXD8EeSWqJIZE8aMGA _lKdQUHD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQUHD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpr3D8EeSWqJIZE8aMGA" association="_lKdQT3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQUXD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQUnD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQU3D8EeSWqJIZE8aMGA" memberEnd="_lKcptHD8EeSWqJIZE8aMGA _lKdQVHD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQVHD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpr3D8EeSWqJIZE8aMGA" association="_lKdQU3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQVXD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQVnD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQV3D8EeSWqJIZE8aMGA" name="KAssociationEndPoint">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQWHD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQWXD8EeSWqJIZE8aMGA" name="multMin" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQWnD8EeSWqJIZE8aMGA" name="multMax" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQW3D8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQXHD8EeSWqJIZE8aMGA" name="visibility" visibility="private" type="_lKcp7nD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQXXD8EeSWqJIZE8aMGA" name="endpointClass" visibility="private" type="_lKcpinD8EeSWqJIZE8aMGA" association="_lKdQaXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQXnD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQX3D8EeSWqJIZE8aMGA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQYHD8EeSWqJIZE8aMGA" name="navigable" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQYXD8EeSWqJIZE8aMGA" memberEnd="_lKdQSXD8EeSWqJIZE8aMGA _lKdQYnD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQYnD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKdQRnD8EeSWqJIZE8aMGA" association="_lKdQYXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQY3D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQZHD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQZXD8EeSWqJIZE8aMGA" memberEnd="_lKdQTHD8EeSWqJIZE8aMGA _lKdQZnD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQZnD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKdQRnD8EeSWqJIZE8aMGA" association="_lKdQZXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQZ3D8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQaHD8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQaXD8EeSWqJIZE8aMGA" name="" memberEnd="_lKdQXXD8EeSWqJIZE8aMGA _lKdQanD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQanD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKdQV3D8EeSWqJIZE8aMGA" association="_lKdQaXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQa3D8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQbHD8EeSWqJIZE8aMGA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQbXD8EeSWqJIZE8aMGA" name="KNode" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQbnD8EeSWqJIZE8aMGA" name="boundingbox" visibility="private" type="_lKcpmHD8EeSWqJIZE8aMGA" association="_lKdQNXD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQb3D8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQcHD8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQcXD8EeSWqJIZE8aMGA" memberEnd="_lKcpvHD8EeSWqJIZE8aMGA _lKcppXD8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQcnD8EeSWqJIZE8aMGA" memberEnd="_lKcpv3D8EeSWqJIZE8aMGA _lKcponD8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQc3D8EeSWqJIZE8aMGA" memberEnd="_lKcpwnD8EeSWqJIZE8aMGA _lKcplXD8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQdHD8EeSWqJIZE8aMGA" memberEnd="_lKcpxXD8EeSWqJIZE8aMGA _lKdQdXD8EeSWqJIZE8aMGA">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lKdQdXD8EeSWqJIZE8aMGA" name="" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" association="_lKdQdHD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQdnD8EeSWqJIZE8aMGA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQd3D8EeSWqJIZE8aMGA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQeHD8EeSWqJIZE8aMGA" name="KClass">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQeXD8EeSWqJIZE8aMGA" general="_lKcpinD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQenD8EeSWqJIZE8aMGA" name="abstract" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQe3D8EeSWqJIZE8aMGA" name="KInterface">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQfHD8EeSWqJIZE8aMGA" general="_lKcpinD8EeSWqJIZE8aMGA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQfXD8EeSWqJIZE8aMGA" name="Diagramm">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQfnD8EeSWqJIZE8aMGA" general="_lKcprHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQf3D8EeSWqJIZE8aMGA" name="box" visibility="private" type="_lKcpmHD8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQhnD8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQgHD8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQgXD8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQgnD8EeSWqJIZE8aMGA" name="graphicalEdge" visibility="private" type="_lKcpt3D8EeSWqJIZE8aMGA" aggregation="composite" association="_lKdQh3D8EeSWqJIZE8aMGA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lKdQg3D8EeSWqJIZE8aMGA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lKdQhHD8EeSWqJIZE8aMGA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQhXD8EeSWqJIZE8aMGA" name="name" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQhnD8EeSWqJIZE8aMGA" memberEnd="_lKdQf3D8EeSWqJIZE8aMGA _lKcpn3D8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lKdQh3D8EeSWqJIZE8aMGA" memberEnd="_lKdQgnD8EeSWqJIZE8aMGA _lKcpyHD8EeSWqJIZE8aMGA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lKdQiHD8EeSWqJIZE8aMGA" name="LabelPosition">
+    <generalization xmi:type="uml:Generalization" xmi:id="_lKdQiXD8EeSWqJIZE8aMGA" general="_lKcpqHD8EeSWqJIZE8aMGA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lKdQinD8EeSWqJIZE8aMGA" name="element" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.2/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lKdQi3D8EeSWqJIZE8aMGA">
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lKdQjHD8EeSWqJIZE8aMGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.2/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+    </xmi:Extension>
+    <appliedProfile xmi:type="uml:Profile" href="http://schema.omg.org/spec/UML/2.2/StandardProfileL2.xmi#_0"/>
+  </profileApplication>
+</uml:Package>

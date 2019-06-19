@@ -1,0 +1,26 @@
+package de.unioldenburg.dl.generated;
+
+public class $interface_name
+{
+    #set( $operation="create"+$model_element+"(String gDiff_UUID")
+public String $operation
+            #foreach( $attr in $attrList )
+            , String $attr
+            #end
+            )
+    {
+        return gDiff_UUID#foreach( $a in $attrList ) + $a #end;
+    }
+    #foreach( $attr in $attrList )
+    #set( $attributeChange="change"+$attr+"(String gDiff_UUID, String new"+$attr+")")
+public String $attributeChange
+    {   
+        return gDiff_UUID + ".change$attr(" + new$attr + ")";
+    }
+    #end
+    #set( $elementDelete="delete"+$model_element+"(String gDiff_UUID)")
+public String $elementDelete
+    {
+        return gDiff_UUID + ".delete()";
+    }
+}
